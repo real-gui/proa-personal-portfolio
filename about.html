@@ -1,72 +1,115 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about | gui</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
     <header>
-        <p>gui</p>
+        <a class="logo" href="index.html">gui</a>
 
         <nav>
-            <a href="index.html">home</a>
             <a href="projects.html">projects</a>
-            <a href="about.html">about</a>
+            <a href="about.html" class="active" aria-current="page">about</a>
             <a href="contact.html">contact</a>
         </nav>
     </header>
 
     <main>
-        <section>
-            <img 
-                class="profile-photo" 
-                src="images/portfolio-pic.jpeg"
-                alt="Photo of Guilherme">
+        <div class="about-container">
+            <section class="about-intro">
+                <img
+                    class="profile-photo"
+                    src="images/portfolio-pic.jpeg"
+                    alt="Photo of Guilherme"
+                >
 
-            <h1>Guilherme</h1>
-            <p>Learning to code.</p>
+                <div class="about-intro-text">
+                    <h1>Guilherme</h1>
+                    <p>Learning to code.</p>
+                </div>
+            </section>
 
-        </section>
+            <section class="about-content">
+                <h2>about me</h2>
 
-        <section>
-            <h2>about me</h2>
+                <p>Hey, I'm Gui \o!</p>
 
-            <p>Hey, I'm Gui \o!</p>
+                <p>
+                    I'm currently learning programming and exploring the world
+                    of technology. Besides that, I'm into working out, sports,
+                    gaming, and music. This is a little space where I can
+                    share who I am, my interests, and what I'm building
+                    along the way.
+                </p>
+            </section>
 
-            <p>
-                I'm currently learning programming and exploring the world of 
-                technology. Besides that, I'm into working out, sports, gaming,
-                and music. This is a little space where I can share who I am, 
-                my interests, and what I'm building along the way.
-            </p>
-        </section>
-        <section>
-            <h2>find me online</h2>
-            <a
-                href="https://github.com/real-gui"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                github
-            </a>
-            <a
-                href="https://www.linkedin.com/in/gui-work"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                linkedin
-            </a>
-            <a
-                href="https://discord.com/users/1282564022566387804"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                discord
-            </a>
+            <section class="about-socials">
+                <h2>find me online</h2>
 
-        </section>
+                <div class="social-grid">
+                    <a
+                        class="social-card"
+                        href="https://github.com/real-gui"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="social-info">
+                            <h3>GitHub</h3>
+                            <p>@real-gui</p>
+                        </div>
+
+                        <span class="social-arrow" aria-hidden="true">↗</span>
+                    </a>
+
+                    <a
+                        class="social-card"
+                        href="https://www.linkedin.com/in/gui-work"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="social-info">
+                            <h3>LinkedIn</h3>
+                            <p>Guilherme Moreira</p>
+                        </div>
+
+                        <span class="social-arrow" aria-hidden="true">↗</span>
+                    </a>
+
+                    <a
+                        class="social-card"
+                        href="https://discord.com/users/1282564022566387804"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="social-info">
+                            <h3>Discord</h3>
+                            <p>@pingumaneiro</p>
+                        </div>
+
+                        <span class="social-arrow" aria-hidden="true">↗</span>
+                    </a>
+
+                    <a
+                        class="social-card"
+                        href="https://www.instagram.com/guiisntt/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <div class="social-info">
+                            <h3>Instagram</h3>
+                            <p>@guiisntt</p>
+                        </div>
+
+                        <span class="social-arrow" aria-hidden="true">↗</span>
+                    </a>
+                </div>
+            </section>
+        </div>
     </main>
-    
 </body>
 </html>
