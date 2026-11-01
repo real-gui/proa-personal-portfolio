@@ -1,74 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact | gui</title>
-    <link rel="stylesheet" href="css/all.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/contact.css">
 </head>
 <body>
     <header>
-        <p>gui</p>
+        <a class="logo" href="index.html">gui</a>
 
         <nav>
-            <a href="index.html">home</a>
             <a href="projects.html">projects</a>
             <a href="about.html">about</a>
-            <a href="contact.html">contact</a>
+            <a
+                href="contact.html"
+                class="active"
+                aria-current="page"
+            >
+                contact
+            </a>
         </nav>
     </header>
-    <main>
-        <h1>contact</h1>
 
-        <p>
+    <main class="contact-container">
+        <h1>talk to me</h1>
+
+        <p class="contact-description">
             Have a question or just want to say hi?
             Feel free to reach out!
         </p>
 
-        <form>
-            <label for="name">name</label>
-            <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="your name"
-                required
-            >
-            <br><br>
+        <form class="contact-form">
+            <div class="form-field">
+                <label for="name">your name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name..."
+                    required
+                >
+            </div>
 
-            <label for="email">e-mail</label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="your email"
-                required
-            >
-            <br><br>
+            <div class="form-field">
+                <label for="email">your email</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email..."
+                    required
+                >
+            </div>
 
-            <label for="subject">subject</label>
-            <select id="subject" name="subject" required>
-                <option value="">select a subject</option>
-                <option value="question">question</option>
-                <option value="feedback">feedback</option>
-                <option value="other">other</option>
-            </select>
-            <br><br>
+            <div class="form-field">
+                <label for="subject">subject</label>
+                <select
+                    id="subject"
+                    name="subject"
+                    required
+                >
+                    <option value="" disabled selected>
+                        Select a subject
+                    </option>
+                    <option value="question">Question</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
 
-            <label for="message">message</label>
-            <textarea
-                id="message"
-                name="message"
-                rows="5"
-                placeholder="your message..."
-                required
-            ></textarea>
-            <br><br>
+            <div class="form-field">
+                <label for="message">message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message..."
+                    required
+                ></textarea>
+            </div>
 
-            <button type="submit">send message</button>
+            <button type="submit">
+                send message ↗
+            </button>
         </form>
     </main>
-    
 </body>
 </html>

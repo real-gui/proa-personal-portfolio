@@ -1,0 +1,133 @@
+
+/* PROJECTS */
+
+.projects-container {
+    max-width: 800px;
+    margin: 65px auto 80px;
+}
+
+.projects-container h1 {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin: 0 0 12px 0;
+}
+
+.projects-description {
+    color: #a0a0a0;
+    font-size: 13px;
+    margin: 0 0 15px 0;
+}
+
+/* TITLE ACCENT */
+
+.projects-accent {
+    width: 50px;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        rgba(150, 114, 89, 0.7),
+        rgba(150, 114, 89, 0)
+    );
+    margin-bottom: 50px;
+}
+
+/* PROJECT CARDS */
+
+.projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.project-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 25px;
+    border: 1px solid #404040;
+    background-color: #0a0a0a;
+    transition:
+        border-color 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.project-info {
+    max-width: 570px;
+}
+
+.project-heading {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.project-number {
+    color: #967259;
+    font-size: 13px;
+}
+
+.project-info h2 {
+    color: #f5f5f5;
+    font-size: 18px;
+    margin: 0;
+}
+
+.project-info p {
+    color: #a0a0a0;
+    font-size: 12px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* PROJECT STATUS */
+
+.project-status {
+    color: #a0a0a0;
+    font-size: 11px;
+    white-space: nowrap;
+    border: 1px solid #404040;
+    background-color: #0a0a0a;
+    padding: 8px 12px;
+    flex-shrink: 0;
+    transition: border-color 0.3s ease;
+}
+
+/* PROJECT HOVER */
+
+.project-card:hover {
+    border-color: #967259;
+    background-color: #211912;
+}
+
+.project-card:hover .project-status {
+    border-color: #967259;
+}
+
+/* PROJECTS FOOTER */
+
+.projects-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.projects-footer-content {
+    width: fit-content;
+}
+
+.projects-footer-line {
+    width: 100%;
+    height: 1px;
+    background-color: #967259;
+}
+
+.projects-footer p {
+    color: #555555;
+    font-size: 11px;
+    margin: 15px 0 0 0;
+    text-align: center;
+}

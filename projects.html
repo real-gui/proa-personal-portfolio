@@ -1,30 +1,76 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>projects | gui</title>
-    <link rel="stylesheet" href="css/all.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="CSS/all.css">
+    <link rel="stylesheet" href="CSS/projects.css">
 </head>
 <body>
     <header>
-        <p>gui</p>
+        <a class="logo" href="index.html">gui</a>
 
         <nav>
-            <a href="index.html">home</a>
-            <a href="projects.html">projects</a>
+            <a
+                href="projects.html"
+                class="active"
+                aria-current="page"
+            >
+                projects
+            </a>
             <a href="about.html">about</a>
             <a href="contact.html">contact</a>
         </nav>
     </header>
 
-    <main>
+    <main class="projects-container">
         <h1>projects</h1>
 
-        <p>
+        <p class="projects-description">
             A collection of things I've built along the way.
         </p>
+
+        <div class="projects-accent" aria-hidden="true"></div>
+
+        <div class="projects-list">
+            <article class="project-card">
+                <div class="project-info">
+                    <div class="project-heading">
+                        <span class="project-number">01</span>
+                        <h2>realfocus</h2>
+                    </div>
+
+                    <p>
+                        A Python study tracker developed as my CS50P
+                        final project. Track study sessions, view
+                        history, and explore statistics.
+                    </p>
+                </div>
+
+                <span class="project-status">private</span>
+            </article>
+        </div>
+
+        <div class="projects-footer">
+            <div class="projects-footer-content">
+                <div
+                    class="projects-footer-line"
+                    aria-hidden="true"
+                ></div>
+
+                <p>1 project indexed</p>
+            </div>
+        </div>
     </main>
-    
 </body>
 </html>
