@@ -16,6 +16,7 @@
     font-size: 100px;
     letter-spacing: 8px;
     margin-bottom: 20px;
+    color: var(--text-color);
 }
 
 .home nav {
@@ -24,7 +25,7 @@
 }
 
 .home nav a {
-    color: #a0a0a0;
+    color: var(--muted-color);
     text-decoration: none;
     font-size: 14px;
     padding-bottom: 4px;
@@ -35,14 +36,14 @@
 }
 
 .home nav a:hover {
-    color: #f5f5f5;
+    color: var(--home-hover-color);
 }
 
 .home nav a::before {
     content: ">";
     position: absolute;
     left: 0;
-    color: #967259;
+    color: var(--accent-color);
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -58,14 +59,13 @@
     left: 0;
     width: 0;
     height: 1px;
-    background-color: #967259;
+    background-color: var(--accent-color);
     transition: width 0.2s ease-out;
 }
 
 .home nav a:hover::after {
     width: 100%;
 }
-
 
 /* Name Animation */
 
@@ -130,7 +130,7 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-    color: #a0a0a0;
+    color: var(--muted-color);
     font-size: 12px;
 }
 
@@ -140,7 +140,6 @@
     overflow: hidden;
     white-space: nowrap;
     animation: typing 0.9s steps(30, end) 1.25s forwards;
-
 }
 
 @keyframes typing {
@@ -152,6 +151,8 @@
         width: 30ch;
     }
 }
+
+/* Reduced Motion */
 
 @media (prefers-reduced-motion: reduce) {
     .home h1 span,

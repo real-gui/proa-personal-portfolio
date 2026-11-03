@@ -30,7 +30,7 @@
 .about-intro-text p {
     font-size: 13px;
     margin: 0;
-    color: #a0a0a0;
+    color: var(--muted-color);
 }
 
 /* ABOUT ME */
@@ -44,13 +44,13 @@
 .about-socials h2 {
     font-size: 18px;
     font-weight: 700;
-    color: #f5f5f5;
+    color: var(--text-color);
     margin: 0 0 20px 0;
 }
 
 .about-content p {
     font-size: 13px;
-    color: #a0a0a0;
+    color: var(--muted-color);
     line-height: 1.8;
 }
 
@@ -73,8 +73,8 @@
     align-items: flex-start;
     gap: 8px;
     padding: 18px;
-    border: 1px solid #404040;
-    background-color: transparent;
+    border: 1px solid var(--social-border-color, #404040);
+    background-color: var(--surface-color);
     text-decoration: none;
     transition:
         border-color 0.3s ease,
@@ -82,20 +82,20 @@
 }
 
 .social-info h3 {
-    color: #f5f5f5;
+    color: var(--text-color);
     font-size: 14px;
     margin: 0 0 6px 0;
 }
 
 .social-info p {
-    color: #a0a0a0;
+    color: var(--muted-color);
     font-size: 11px;
     margin: 0;
     overflow-wrap: anywhere;
 }
 
 .social-arrow {
-    color: #a0a0a0;
+    color: var(--muted-color);
     font-size: 18px;
     flex-shrink: 0;
     transition:
@@ -103,14 +103,22 @@
         transform 0.3s ease;
 }
 
+/* SOCIAL HOVER */
+
 .social-card:hover {
-    border-color: #967259;
-    background-color: #211912;
+    border-color: var(--accent-color);
+    background-color: var(--surface-hover-color);
 }
 
 .social-card:hover .social-arrow {
-    color: #967259;
+    color: var(--accent-color);
     transform: translate(3px, -3px);
+}
+
+/* LIGHT MODE */
+
+body.light-mode .about-container {
+    --social-border-color: var(--border-color);
 }
 
 /* RESPONSIVE */

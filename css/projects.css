@@ -14,7 +14,7 @@
 }
 
 .projects-description {
-    color: #a0a0a0;
+    color: var(--muted-color);
     font-size: 13px;
     margin: 0 0 15px 0;
 }
@@ -46,8 +46,8 @@
     align-items: center;
     gap: 30px;
     padding: 25px;
-    border: 1px solid #404040;
-    background-color: #0a0a0a;
+    border: 1px solid var(--project-border-color, #404040);
+    background-color: var(--surface-color);
     transition:
         border-color 0.3s ease,
         background-color 0.3s ease;
@@ -65,18 +65,18 @@
 }
 
 .project-number {
-    color: #967259;
+    color: var(--accent-color);
     font-size: 13px;
 }
 
 .project-info h2 {
-    color: #f5f5f5;
+    color: var(--text-color);
     font-size: 18px;
     margin: 0;
 }
 
 .project-info p {
-    color: #a0a0a0;
+    color: var(--muted-color);
     font-size: 12px;
     line-height: 1.8;
     margin: 0;
@@ -85,11 +85,11 @@
 /* PROJECT STATUS */
 
 .project-status {
-    color: #a0a0a0;
+    color: var(--muted-color);
     font-size: 11px;
     white-space: nowrap;
-    border: 1px solid #404040;
-    background-color: #0a0a0a;
+    border: 1px solid var(--project-border-color, #404040);
+    background-color: var(--surface-color);
     padding: 8px 12px;
     flex-shrink: 0;
     transition: border-color 0.3s ease;
@@ -98,12 +98,12 @@
 /* PROJECT HOVER */
 
 .project-card:hover {
-    border-color: #967259;
-    background-color: #211912;
+    border-color: var(--accent-color);
+    background-color: var(--surface-hover-color);
 }
 
 .project-card:hover .project-status {
-    border-color: #967259;
+    border-color: var(--accent-color);
 }
 
 /* PROJECTS FOOTER */
@@ -122,12 +122,19 @@
 .projects-footer-line {
     width: 100%;
     height: 1px;
-    background-color: #967259;
+    background-color: var(--accent-color);
 }
 
 .projects-footer p {
-    color: #555555;
+    color: var(--nav-color);
     font-size: 11px;
     margin: 15px 0 0 0;
     text-align: center;
+}
+
+/* LIGHT MODE */
+
+body.light-mode .project-card,
+body.light-mode .project-status {
+    --project-border-color: var(--border-color);
 }
