@@ -1,12 +1,19 @@
 
-/* ABOUT CONTAINER */
+/* About container */
 
 .about-container {
     max-width: 800px;
     margin: 0 auto;
 }
 
-/* PROFILE */
+/* Profile */
+
+.about-intro {
+    display: flex;
+    align-items: flex-end;
+    gap: 20px;
+    margin: 65px 0 0;
+}
 
 .profile-photo {
     width: 150px;
@@ -15,49 +22,42 @@
     object-position: center 12%;
 }
 
-.about-intro {
-    display: flex;
-    align-items: flex-end;
-    gap: 20px;
-    margin: 65px 0 0 0;
-}
-
 .about-intro-text h1 {
+    margin: 0 0 10px;
     font-size: 24px;
-    margin: 0 0 10px 0;
 }
 
 .about-intro-text p {
-    font-size: 13px;
     margin: 0;
     color: var(--muted-color);
+    font-size: 13px;
 }
 
-/* ABOUT ME */
+/* About me */
 
 .about-content {
     max-width: 650px;
-    margin: 40px 0 0 0;
+    margin: 40px 0 0;
 }
 
 .about-content h2,
 .about-socials h2 {
+    margin: 0 0 20px;
+    color: var(--text-color);
     font-size: 18px;
     font-weight: 700;
-    color: var(--text-color);
-    margin: 0 0 20px 0;
 }
 
 .about-content p {
-    font-size: 13px;
     color: var(--muted-color);
+    font-size: 13px;
     line-height: 1.8;
 }
 
-/* SOCIAL CARDS */
+/* Social cards */
 
 .about-socials {
-    margin: 30px 0 80px 0;
+    margin: 30px 0 80px;
 }
 
 .social-grid {
@@ -82,28 +82,28 @@
 }
 
 .social-info h3 {
+    margin: 0 0 6px;
     color: var(--text-color);
     font-size: 14px;
-    margin: 0 0 6px 0;
 }
 
 .social-info p {
+    margin: 0;
     color: var(--muted-color);
     font-size: 11px;
-    margin: 0;
     overflow-wrap: anywhere;
 }
 
 .social-arrow {
+    flex-shrink: 0;
     color: var(--muted-color);
     font-size: 18px;
-    flex-shrink: 0;
     transition:
         color 0.3s ease,
         transform 0.3s ease;
 }
 
-/* SOCIAL HOVER */
+/* Social hover */
 
 .social-card:hover {
     border-color: var(--accent-color);
@@ -115,13 +115,13 @@
     transform: translate(3px, -3px);
 }
 
-/* LIGHT MODE */
+/* Light mode */
 
 body.light-mode .about-container {
     --social-border-color: var(--border-color);
 }
 
-/* RESPONSIVE */
+/* Responsive */
 
 @media (max-width: 700px) {
     .social-grid {

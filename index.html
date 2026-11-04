@@ -1,11 +1,11 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home | gui</title>
-    <link rel="stylesheet" href="css/all.css">
-    <link rel="stylesheet" href="css/index.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -16,6 +16,9 @@
         href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap"
         rel="stylesheet"
     >
+
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <button
@@ -38,7 +41,7 @@
             <span aria-hidden="true">M</span>
             <span aria-hidden="true">E</span>
         </h1>
-        
+
         <nav>
             <a href="projects.html">projects</a>
             <a href="about.html">about</a>
@@ -49,13 +52,33 @@
     <footer class="home-footer">
         <p>PROA Transforme-se // real-gui</p>
     </footer>
-    <script 
-        src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js">
-    </script>
-    <script 
-        src="JS/theme.js">
-    </script>
 
+    <div class="language-switcher">
+        <button
+            class="language-button"
+            type="button"
+            data-lang="pt"
+            aria-label="Switch to Portuguese"
+        >
+            PT
+        </button>
+
+        <span class="language-divider" aria-hidden="true">/</span>
+
+        <button
+            class="language-button"
+            type="button"
+            data-lang="en"
+            aria-label="Switch to English"
+        >
+            EN
+        </button>
+    </div>
+
+    <script
+        src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"
+    ></script>
     <script src="js/theme.js"></script>
+    <script src="js/language.js"></script>
 </body>
 </html>

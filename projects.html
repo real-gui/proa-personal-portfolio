@@ -13,8 +13,8 @@
         rel="stylesheet"
     >
 
-    <link rel="stylesheet" href="CSS/all.css">
-    <link rel="stylesheet" href="CSS/projects.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/projects.css">
 </head>
 <body>
     <button
@@ -41,6 +41,28 @@
         </nav>
     </header>
 
+    <div class="language-switcher">
+        <button
+            class="language-button"
+            type="button"
+            data-lang="pt"
+            aria-label="Switch to Portuguese"
+        >
+            PT
+        </button>
+
+        <span class="language-divider" aria-hidden="true">/</span>
+
+        <button
+            class="language-button"
+            type="button"
+            data-lang="en"
+            aria-label="Switch to English"
+        >
+            EN
+        </button>
+    </div>
+
     <main class="projects-container">
         <h1>projects</h1>
 
@@ -51,7 +73,12 @@
         <div class="projects-accent" aria-hidden="true"></div>
 
         <div class="projects-list">
-            <article class="project-card">
+            <a
+                class="project-card"
+                href="https://www.youtube.com/watch?v=sajHERzMuPU"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <div class="project-info">
                     <div class="project-heading">
                         <span class="project-number">01</span>
@@ -66,7 +93,7 @@
                 </div>
 
                 <span class="project-status">private</span>
-            </article>
+            </a>
         </div>
 
         <div class="projects-footer">
@@ -80,10 +107,11 @@
             </div>
         </div>
     </main>
-    
-    <script 
-        src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js">
-    </script>
-    <script src="JS/theme.js"></script>
+
+    <script
+        src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"
+    ></script>
+    <script src="js/theme.js"></script>
+    <script src="js/language.js"></script>
 </body>
 </html>

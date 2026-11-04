@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about | gui</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/about.css">
 </head>
@@ -16,13 +24,41 @@
     >
         <i data-lucide="sun"></i>
     </button>
-    
+
+    <div class="language-switcher">
+        <button
+            class="language-button"
+            type="button"
+            data-lang="pt"
+            aria-label="Switch to Portuguese"
+        >
+            PT
+        </button>
+
+        <span class="language-divider" aria-hidden="true">/</span>
+
+        <button
+            class="language-button"
+            type="button"
+            data-lang="en"
+            aria-label="Switch to English"
+        >
+            EN
+        </button>
+    </div>
+
     <header>
         <a class="logo" href="index.html">gui</a>
 
         <nav>
             <a href="projects.html">projects</a>
-            <a href="about.html" class="active" aria-current="page">about</a>
+            <a
+                href="about.html"
+                class="active"
+                aria-current="page"
+            >
+                about
+            </a>
             <a href="contact.html">contact</a>
         </nav>
     </header>
@@ -48,11 +84,11 @@
                 <p>Hey, I'm Gui \o!</p>
 
                 <p>
-                    I'm currently learning programming and exploring the world
-                    of technology. Besides that, I'm into working out, sports,
-                    gaming, and music. This is a little space where I can
-                    share who I am, my interests, and what I'm building
-                    along the way.
+                    I'm currently learning programming and exploring
+                    the world of technology. Besides that, I'm into
+                    working out, sports, gaming, and music. This is
+                    a little space where I can share who I am, my
+                    interests, and what I'm building along the way.
                 </p>
             </section>
 
@@ -119,9 +155,11 @@
             </section>
         </div>
     </main>
-    <script 
-        src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js">
-    </script>
-    <script src="JS/theme.js"></script>
+
+    <script
+        src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"
+    ></script>
+    <script src="js/theme.js"></script>
+    <script src="js/language.js"></script>
 </body>
 </html>

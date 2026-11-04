@@ -1,5 +1,5 @@
 
-/* PROJECTS */
+/* Projects container */
 
 .projects-container {
     max-width: 800px;
@@ -7,32 +7,32 @@
 }
 
 .projects-container h1 {
+    margin: 0 0 12px;
     font-size: 48px;
     font-weight: 700;
     letter-spacing: -2px;
-    margin: 0 0 12px 0;
 }
 
 .projects-description {
+    margin: 0 0 15px;
     color: var(--muted-color);
     font-size: 13px;
-    margin: 0 0 15px 0;
 }
 
-/* TITLE ACCENT */
+/* Title accent */
 
 .projects-accent {
     width: 50px;
     height: 1px;
+    margin-bottom: 50px;
     background: linear-gradient(
         to right,
         rgba(150, 114, 89, 0.7),
         rgba(150, 114, 89, 0)
     );
-    margin-bottom: 50px;
 }
 
-/* PROJECT CARDS */
+/* Project cards */
 
 .projects-list {
     display: flex;
@@ -48,6 +48,8 @@
     padding: 25px;
     border: 1px solid var(--project-border-color, #404040);
     background-color: var(--surface-color);
+    text-decoration: none;
+    cursor: pointer;
     transition:
         border-color 0.3s ease,
         background-color 0.3s ease;
@@ -70,32 +72,32 @@
 }
 
 .project-info h2 {
+    margin: 0;
     color: var(--text-color);
     font-size: 18px;
-    margin: 0;
 }
 
 .project-info p {
+    margin: 0;
     color: var(--muted-color);
     font-size: 12px;
     line-height: 1.8;
-    margin: 0;
 }
 
-/* PROJECT STATUS */
+/* Project status */
 
 .project-status {
+    flex-shrink: 0;
+    padding: 8px 12px;
+    border: 1px solid var(--project-border-color, #404040);
+    background-color: var(--surface-color);
     color: var(--muted-color);
     font-size: 11px;
     white-space: nowrap;
-    border: 1px solid var(--project-border-color, #404040);
-    background-color: var(--surface-color);
-    padding: 8px 12px;
-    flex-shrink: 0;
     transition: border-color 0.3s ease;
 }
 
-/* PROJECT HOVER */
+/* Project hover */
 
 .project-card:hover {
     border-color: var(--accent-color);
@@ -106,7 +108,7 @@
     border-color: var(--accent-color);
 }
 
-/* PROJECTS FOOTER */
+/* Projects footer */
 
 .projects-footer {
     display: flex;
@@ -126,13 +128,13 @@
 }
 
 .projects-footer p {
+    margin: 15px 0 0;
     color: var(--nav-color);
     font-size: 11px;
-    margin: 15px 0 0 0;
     text-align: center;
 }
 
-/* LIGHT MODE */
+/* Light mode */
 
 body.light-mode .project-card,
 body.light-mode .project-status {
